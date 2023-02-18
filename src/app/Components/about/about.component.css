@@ -1,7 +1,143 @@
+/* .box-about {
+    padding-top: 0;
+    height: 100%;
+    border-top: 0;
+    padding-bottom: 6.5%;
+  }
+
 .about-header{
     color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 575;
+    text-transform: uppercase;
 }
 
 .about-text{
     color: white;
+} */
+
+.boxabout {
+  padding-top: 0;
+  height: 100%;
+  border-top: 0;
+  padding-bottom: 6.5%;
+}
+
+@media (max-width: 75em) {
+  .boxabout {
+    height: 100%;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .wrapper {
+    padding-bottom: 4rem;
+  }
+}
+
+.about {
+  margin: 0 0 4.5rem;
+  padding-top: 3rem;
+  color: white;
+  font-size: 3rem;
+  font-weight: 575;
+  text-transform: uppercase;
+  text-align: center;
+  /* opacity: 0;
+  transition: opacity 1s;
+  transition-delay: 0.5; */
+}
+
+@media (max-width: 48em) {
+  .about {
+    margin: 0 0 2.5rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .about {
+    font-size: 2.5rem;
+  }
+}
+
+.potrait {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  /* opacity: 0;
+  transform: translateY(20px);
+  transition: transform 1s, opacity 1s;
+  transition-delay: 0.7s; */
+}
+@media (max-width: 37.5em) {
+  .potrait {
+    align-items: center;
+  }
+}
+
+@media (max-width: 48em) {
+  .potrait {
+    align-items: center;
+    padding-bottom: 4em;
+  }
+}
+
+@media (max-width: 75em) {
+  .potrait {
+    height: 100%;
+  }
+}
+
+.AboutMe {
+  display: flex;
+  height: 100%;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+  /* opacity: 0;
+  transform: translateX(-20px);
+  transition: transform 1s, opacity 1s;
+  transition-delay: 0.9s; */
+}
+
+@media (max-width: 37.5em) {
+  .AboutMe {
+    align-items: center;
+  }
+}
+
+.AboutMe-text {
+  text-align: left;
+}
+
+@media (max-width: 62em) {
+  .AboutMe-text {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .AboutMe-text {
+    font-size: 1.05rem;
+    text-align: center;
+  }
+}
+.AboutMe-text--important {
+  display: inline-block;
+  font-style: italic;
+  padding: 0 0.3rem;
+  margin: 0.3rem 0;
+  line-height: 1.6;
+}
+@media (max-width: 37.5em) {
+  .AboutMe-text--important {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-style: normal;
+  }
 }

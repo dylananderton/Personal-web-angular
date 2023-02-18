@@ -1,7 +1,5 @@
-@media (min-width: 576px) {
-    .jumbotron {
-    padding: 4rem 2rem 0;
-    }
+.intro-text.is-small {
+    color: green;
 }
 
 .jumbotron-fluid {
@@ -28,6 +26,7 @@
 .intro-text {
     color:white;
     font-size: 3.5rem;
+    font-weight: bold;
     /* opacity: 0;
     transform: translateX(-20px); */
     /* transition: transform 1s, opacity 1s;
@@ -39,6 +38,7 @@
 }
 
 .know-more {
+    margin-top: 10px;
     left: 0.4%;
     font-weight: bold;
     font-size: 2em;
@@ -47,4 +47,4 @@
     transition: transform 1s, opacity 1s;
     transition-duration: 1s;
     transition-delay: 1s; */
-  }
+}

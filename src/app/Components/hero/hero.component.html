@@ -1,11 +1,11 @@
 <section class="jumbotron">
   <div class="vertical-center">
-    <h1 class="intro-text">
+    <h1 [@fadeInOutIntroButton] class="intro-text" [ngClass]="{'is-small':isSmall}">
       Hi, my name is
       <span class="intro-name">Dylan Anderton</span>
       and <br />
       I'm a Front-End Developer
     </h1>
-    <button class="know-more">Know More</button>
+    <button [@fadeInOutIntroText] class="know-more">Know More</button>
   </div>
 </section>

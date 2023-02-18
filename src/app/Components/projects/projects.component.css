@@ -1,3 +1,288 @@
-.projects-header{
-    color: white;
+@media (max-width: 48em) {
+  .projects {
+    margin: 0 0 2.5rem;
+  }
 }
+
+@media (max-width: 37.5em) {
+  .projects {
+    font-size: 2.5rem;
+  }
+}
+
+.project {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hangman {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+#notes {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#crypto {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#passgen {
+  position: relative;
+  margin-top: 1em;
+}
+
+#weather {
+  position: relative;
+  margin-top: 1em;
+}
+
+#notespic,
+#hangmanpic,
+#cryptopic,
+#passgenpic,
+#weatherpic {
+  height: 312px;
+  width: 620px;
+  border: 2px solid #f8f0e3;
+  align-self: center;
+  /* transform: translateY(0);
+    transition: transform 0.5s, box-shadow 0.5s; */
+}
+
+#notespic a,
+#hangmanpic a,
+#cryptopic a,
+#passgenpic a,
+#weatherpic a {
+  /* transition: opacity 0.4s; */
+}
+
+.notes-overlay,
+.hm-overlay,
+.crypto-overlay,
+.passgen-overlay,
+.weather-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* opacity: 0;
+    transition: .4s ease; */
+  background-color: #252526;
+}
+
+.notes-overlay:hover,
+.hm-overlay:hover,
+.passgen-overlay:hover,
+.crypto-overlay:hover,
+.weather-overlay:hover {
+  cursor: pointer;
+  opacity: 0.875;
+}
+
+#notes:hover .notes-overlay .notes-overlay-text {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#hangman:hover .hm-overlay .hm-overlay-text {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#passgen:hover .passgen-overlay .passgen-overlay-text {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#crypto:hover .crypto-overlay .crypto-overlay-text {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#weather:hover .weather-overlay .weather-overlay-text {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.notes-overlay-text,
+.hm-overlay-text,
+.crypto-overlay-text,
+.passgen-overlay-text,
+.weather-overlay-text {
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+@media (max-width: 62em) {
+  #notespic {
+    height: 260px;
+    width: 517px;
+  }
+  #hangmanpic {
+    height: 260px;
+    width: 517px;
+  }
+  #cryptopic {
+    height: 260px;
+    width: 517px;
+  }
+  #passgenpic {
+    height: 260px;
+    width: 517px;
+  }
+  #weatherpic {
+    height: 260px;
+    width: 517px;
+  }
+}
+
+#hangman2 {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+#notes2 {
+  position: relative;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#crypto2 {
+  position: relative;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+#passgen2 {
+  position: relative;
+  margin-top: 1.5em;
+}
+
+#weather2 {
+  position: relative;
+  margin-top: 1.5em;
+}
+
+#notespic2,
+#hangmanpic2,
+#cryptopic2,
+#passgenpic2,
+#weatherpic2 {
+  height: 482px;
+  width: 311px;
+  border: 2px solid #f8f0e3;
+  align-self: center;
+  transform: translateY(0);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+#notespic2 a {
+  transition: opacity 0.4s;
+}
+
+#hangmanpic2 a {
+  transition: opacity 0.4s;
+}
+
+#cryptopic2 a {
+  transition: opacity 0.4s;
+}
+
+#passgenpic2 a {
+  transition: opacity 0.4s;
+}
+
+#weatherpic2 a {
+  transition: opacity 0.4s;
+}
+
+.notes2-overlay,
+.hm2-overlay,
+.crypto2-overlay,
+.passgen2-overlay,
+.weather2-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.4s ease;
+  background-color: #252526;
+}
+
+.notes2-overlay:hover,
+.hm2-overlay:hover,
+.passgen2-overlay:hover,
+.crypto2-overlay:hover,
+.weather2-overlay:hover {
+  cursor: pointer;
+  opacity: 0.875;
+}
+
+#notes2:hover .notes2-overlay .notes2-overlay-text {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#hangman2:hover .hm2-overlay .hm2-overlay-text {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#crypto2:hover .crypto2-overlay .crypto2-overlay-text {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#passgen2:hover .passgen2-overlay .passgen2-overlay-text {
+  cursor: pointer;
+  opacity: 1;
+}
+
+#weather2:hover .weather2-overlay .weather2-overlay-text {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.notes2-overlay-text,
+.hm2-overlay-text,
+.passgen2-overlay-text,
+.crypto2-overlay-text,
+.weather2-overlay-text {
+  color: white;
+  font-size: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+/* .project {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: transform 1s, opacity 1s;
+    transition-delay: 0.5s
+  } */
