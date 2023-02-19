@@ -12,4 +12,8 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  sendEmail(){
+    window.open('mailto:dylananderton02@gmail.com', '_self');
+  }
+
 }

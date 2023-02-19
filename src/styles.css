@@ -231,7 +231,7 @@ button {
     transition: 0.3s;
 }
 
-button:after, .talkButton:after {
+button:after {
     content: '';
     background-color: #252526;
     position: absolute;
@@ -242,7 +242,7 @@ button:after, .talkButton:after {
     height: 100%;
 }
 
-button:before, .talkButton:before {
+button:before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -254,16 +254,16 @@ button:before, .talkButton:before {
     z-index: -1;
 }
 
-button:hover, .talkButton:hover {
+button:hover {
     cursor: pointer;
     color: #252526;
 }
 
-button:hover:before, .talkButton:hover:before {
+button:hover:before {
     width: 100%;
 }
 
-button:focus, .talkButton:focus {
+button:focus {
     outline: none;
 }
 

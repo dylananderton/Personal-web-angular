@@ -1,3 +1,15 @@
+.projects {
+  margin: 0 0 6rem;
+  font-size: 3rem;
+  font-weight: 575;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  /* opacity: 0;
+  transition: opacity 1.5s;
+  transition-delay: 0.5s; */
+}
+
 @media (max-width: 48em) {
   .projects {
     margin: 0 0 2.5rem;
@@ -53,8 +65,8 @@
   width: 620px;
   border: 2px solid #f8f0e3;
   align-self: center;
-  /* transform: translateY(0);
-    transition: transform 0.5s, box-shadow 0.5s; */
+  transform: translateY(0);
+  transition: transform 0.5s, box-shadow 0.5s;
 }
 
 #notespic a,
@@ -62,7 +74,7 @@
 #cryptopic a,
 #passgenpic a,
 #weatherpic a {
-  /* transition: opacity 0.4s; */
+  transition: opacity 0.4s;
 }
 
 .notes-overlay,
@@ -75,8 +87,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  /* opacity: 0;
-    transition: .4s ease; */
+  opacity: 0;
+    transition: .4s ease;
   background-color: #252526;
 }
 
@@ -86,7 +98,7 @@
 .crypto-overlay:hover,
 .weather-overlay:hover {
   cursor: pointer;
-  opacity: 0.875;
+  opacity: 0.9;
 }
 
 #notes:hover .notes-overlay .notes-overlay-text {

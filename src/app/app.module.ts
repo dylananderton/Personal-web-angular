@@ -12,6 +12,7 @@ import { ProjectsComponent } from './Components/projects/projects.component';
 import { ContactComponent } from './Components/contact/contact.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { WeatherFinderComponent } from './Components/projects/projects-list/weather-finder/weather-finder/weather-finder.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { WeatherFinderComponent } from './Components/projects/projects-list/weat
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

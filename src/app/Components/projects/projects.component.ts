@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
+  isMobile = false;
+  getIsMobile(): boolean {
+    const width = document.documentElement.clientWidth;
+    const breakpoint = 768;
+    if(width < breakpoint){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {
+    this.isMobile = this.getIsMobile();
+    window.onresize = () =>{
+      this,this.isMobile = this.getIsMobile();
+    }
   }
 
 }

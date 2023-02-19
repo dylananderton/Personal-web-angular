@@ -3,7 +3,7 @@
       <h1 class="skills animated">
       SKILLS
       </h1>
-      <div class="skills-list" id="skills-list">
+      <div *ngIf="isMode2 === false" class="skills-list" id="skills-list">
           <span class="lang-html col-lg-4 col-md-6 col-sm-12 animated" id="lang-html">HTML</span>
           <span class="lang-css col-lg-4 col-md-6 col-sm-12 animated" id="lang-css">CSS</span>
           <span class="lang-js col-lg-4 col-md-6 col-sm-12 animated" id="lang-js">Javascript</span>
@@ -13,7 +13,7 @@
           <span class="lang-c col-lg-4 col-md-6 col-sm-12 animated" id="lang-c">Bootstrap</span>
       </div>
 
-      <div class="skills-list2" id="skills-list2">
+      <div *ngIf="isMode2 === true" class="skills-list2" id="skills-list2">
           <table>
               <tr>
                   <td class="lang-html2 animated">HTML</td>

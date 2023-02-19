@@ -6,16 +6,16 @@
             PROJECTS
         </h1>
         <div class="project animated">
-            <div class="hangman" id="hangman">
+            <div *ngIf="isMobile === false" class="hangman" id="hangman">
                 <a href="hm/hm.html" target="_blank">
-                    <img src="hm/hangman.JPG" id="hangmanpic">
+                    <img src="../../../assets/hangman.jpeg" id="hangmanpic">
                     <div class="hm-overlay">
                         <div class="hm-overlay-text">Hangman</div>
                     </div>
                 </a>
             </div>
-            <div class="hangman2" id="hangman2">
-                <a href="hm/hm.html" target="_blank">
+            <div *ngIf="isMobile === true" class="hangman2" id="hangman2">
+                <a href="../../../assets/hangmanmobile.jpeg" target="_blank">
                     <img src="hm/hangmanmobile.JPG" id="hangmanpic2">
                     <div class="hm2-overlay">
                         <div class="hm2-overlay-text">Hangman</div>
@@ -24,17 +24,17 @@
             </div>
         </div>
         <div class="project animated">
-            <div class="notes" id="notes">
+            <div *ngIf="isMobile === false" class="notes" id="notes">
                 <a href="https://dylananderton.github.io/Notes/" target="_blank">
-                    <img src="Notes/Notes.JPG" id="notespic">
+                    <img src="../../../assets/Notes.jpeg" id="notespic">
                     <div class="notes-overlay">
                         <div class="notes-overlay-text">Notes</div>
                     </div>
                 </a>
             </div>
-            <div class="notes2" id="notes2">
+            <div *ngIf="isMobile === true" class="notes2" id="notes2">
                 <a href="https://dylananderton.github.io/Notes/" target="_blank">
-                    <img src="Notes/NotesMobile.JPG" id="notespic2">
+                    <img src="../../../assets/NotesMobile.jpeg" id="notespic2">
                     <div class="notes2-overlay">
                         <div class="notes2-overlay-text">Notes</div>
                     </div>
@@ -42,17 +42,17 @@
             </div>
         </div>
         <div class="project animated">
-            <div class="crypto" id="crypto">
+            <div *ngIf="isMobile === false" class="crypto" id="crypto">
                 <a href="https://dylananderton.github.io/Crypto-App/" target="_blank">
-                    <img src="Crypto/crypto.JPG" id="cryptopic">
+                    <img src="../../../assets/crypto.jpeg" id="cryptopic">
                     <div class="crypto-overlay">
                         <div class="crypto-overlay-text">Crypto</div>
                     </div>
                 </a>
             </div>
-            <div class="crypto2" id="crypto2">
+            <div *ngIf="isMobile === true" class="crypto2" id="crypto2">
                 <a href="https://dylananderton.github.io/Crypto-App/" target="_blank">
-                    <img src="Crypto/cryptomobile.JPG" id="cryptopic2">
+                    <img src="../../../assets/cryptomobile.jpeg" id="cryptopic2">
                     <div class="crypto2-overlay">
                         <div class="crypto2-overlay-text">Crypto</div>
                     </div>
@@ -60,17 +60,17 @@
             </div>
         </div>
         <div class="project animated">
-            <div class="passgen" id="passgen">
+            <div *ngIf="isMobile === false" class="passgen" id="passgen">
                 <a href="https://dylananderton.github.io/Password-Generator/" target="_blank">
-                    <img src="PassGen/passgen.JPG" id="passgenpic">
+                    <img src="../../../assets/passgen.jpeg" id="passgenpic">
                     <div class="passgen-overlay">
                         <div class="passgen-overlay-text">Password Generator</div>
                     </div>
                 </a>
             </div>
-            <div class="passgen2" id="passgen2">
+            <div *ngIf="isMobile === true" class="passgen2" id="passgen2">
                 <a href="https://dylananderton.github.io/Password-Generator/" target="_blank">
-                    <img src="PassGen/passgenmobile.JPG" id="passgenpic2">
+                    <img src="../../../assets/passgenmobile.jpeg" id="passgenpic2">
                     <div class="passgen2-overlay">
                         <div class="passgen2-overlay-text">Password Generator</div>
                     </div>
@@ -78,17 +78,17 @@
             </div>
         </div>
         <div class="project animated">
-            <div class="weather" id="weather">
+            <div *ngIf="isMobile === false" class="weather" id="weather">
                 <a href="https://dylananderton.github.io/Weather-Finder/" target="_blank">
-                    <img src="Weather/weather.JPG" id="weatherpic">
+                    <img src="../../../assets/weather.jpeg" id="weatherpic">
                     <div class="weather-overlay">
                         <div class="weather-overlay-text">Weather Finder</div>
                     </div>
                 </a>
             </div>
-            <div class="weather2" id="weather2">
+            <div *ngIf="isMobile === true" class="weather2" id="weather2">
                 <a href="https://dylananderton.github.io/Weather-Finder/" target="_blank">
-                    <img src="Weather/weather-mobile.JPG" id="weatherpic2">
+                    <img src="../../../assets/weather-mobile.jpeg" id="weatherpic2">
                     <div class="weather2-overlay">
                         <div class="weather2-overlay-text">Weather Finder</div>
                     </div>
