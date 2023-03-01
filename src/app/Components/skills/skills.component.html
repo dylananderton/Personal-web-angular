@@ -3,7 +3,7 @@
       <h1 class="skills animated">
       SKILLS
       </h1>
-      <div *ngIf="isMode2 === false" class="skills-list" id="skills-list">
+      <div (window:resize)="skillsBr()" *ngIf="showSkillsList1" class="skills-list" id="skills-list">
           <span class="lang-html col-lg-4 col-md-6 col-sm-12 animated" id="lang-html">HTML</span>
           <span class="lang-css col-lg-4 col-md-6 col-sm-12 animated" id="lang-css">CSS</span>
           <span class="lang-js col-lg-4 col-md-6 col-sm-12 animated" id="lang-js">Javascript</span>
@@ -13,7 +13,7 @@
           <span class="lang-c col-lg-4 col-md-6 col-sm-12 animated" id="lang-c">Bootstrap</span>
       </div>
 
-      <div *ngIf="isMode2 === true" class="skills-list2" id="skills-list2">
+      <div *ngIf="showSkillsList2" class="skills-list2" id="skills-list2">
           <table>
               <tr>
                   <td class="lang-html2 animated">HTML</td>
@@ -28,6 +28,15 @@
                   <td class="lang-c2 animated">Bootstrap</td>
               </tr>
           </table>
+      </div>
+
+      <div *ngIf="showSkillsList3" class="skill-list3" id="skills-list3">
+        <div class="lang-html3" id="lang-html3">HTML</div>
+          <div class="lang-css3" id="lang-css3">CSS</div>
+          <div class="lang-js3" id="lang-js3">Javascript</div>
+          <div class="lang-fire3" id="lang-fire3">React</div>
+          <div class="lang-pyth3" id="lang-pyth3">jQuery</div>
+          <div class="lang-c3" id="lang-c3">Bootstrap</div>
       </div>
   </div>
 </section>

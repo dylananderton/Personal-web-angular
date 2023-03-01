@@ -23,7 +23,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 })
 export class HeroComponent implements OnInit {
 
-  public isSmall=  false;
+  public isSmall = false;
 
   constructor(private responsive: BreakpointObserver) { }
 

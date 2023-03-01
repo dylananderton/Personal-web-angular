@@ -12,8 +12,11 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log('getYear',this.getYear);
   }
 
+  topFunction(){
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 
 }

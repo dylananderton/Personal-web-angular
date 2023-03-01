@@ -1,16 +1,8 @@
-.intro-text.is-small {
-    color: green;
-}
-
-.jumbotron-fluid {
-    padding-right: 0;
-    padding-left: 0;
-    border-radius: 0;
-}
-
-.jumbotron{
+#hero {
     min-height: 100vh;
     height: 100vh;
+    display: flex;
+    align-items: center;
     border-bottom: 0;
     font-weight: 400;
     padding: 0 5.6rem;
@@ -20,25 +12,38 @@
     bottom: 0;
     right: 0;
     z-index: -1;
-    /* padding: 6rem 10rem; */
-}
-
-.intro-text {
-    color:white;
-    font-size: 3.5rem;
-    font-weight: bold;
-    /* opacity: 0;
-    transform: translateX(-20px); */
-    /* transition: transform 1s, opacity 1s;
-    transition-delay: 0.5s; */
   }
 
-.intro-name{
-    color: var(--gold);
-}
+.jumbotron {
+    padding: 2rem 1rem 0;
+    border-radius: 0.3rem;
+  }
+  @media (min-width: 576px) {
+    .jumbotron {
+      padding: 4rem 2rem 0;
+    }
+  }
 
-.know-more {
-    margin-top: 10px;
+  .jumbotron-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 0;
+  }
+
+.IntroText {
+    color:white;
+    font-size: 2.5rem;
+    /* opacity: 0;
+    transform: translateX(-20px);
+    transition: transform 1s, opacity 1s;
+    transition-delay: 0.5s; */
+  }
+  
+  .MyName {
+    color:#fad25a;
+  }
+  
+  .knowMore {
     left: 0.4%;
     font-weight: bold;
     font-size: 2em;
@@ -47,4 +52,55 @@
     transition: transform 1s, opacity 1s;
     transition-duration: 1s;
     transition-delay: 1s; */
-}
+  }
+
+  @media (max-width: 37.5em) {
+    #hero {
+      padding: 0 1.6rem;
+    }
+  }
+  #hero .IntroText {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+  @media (max-width: 75em) {
+    #hero .IntroText {
+      font-size: 2.7rem;
+    }
+  }
+  @media (max-width: 56.25em) {
+    #hero .IntroText {
+      font-size: 2.4rem;
+      text-align: center;
+    }
+  }
+  @media (max-width: 37.5em) {
+    #hero .IntroText {
+      font-size: 2.3rem;
+      line-height: 1.5;
+    }
+  }
+  @media (max-width: 20em) {
+    #hero .IntroText {
+      font-size: 2rem;
+    }
+  }
+  #hero .knowMore {
+    display: flex;
+  }
+@media (max-width: 56.25em) {
+    #hero .knowMore {
+      margin: auto;
+      justify-content: center;
+    }
+  }
+  #hero .knowMore {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 37.5em) {
+    #hero .knowMore {
+      font-size: 1.3rem;
+    }
+  }

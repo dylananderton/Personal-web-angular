@@ -22,8 +22,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   color: #d4af37;
-  /* transform: translateY(0);
-  transition: transform 0.5s; */
+  transform: translateY(0);
+  transition: transform 0.5s;
   padding-bottom: 5%;
 }
 
@@ -50,8 +50,8 @@
 
 .git {
   text-decoration: none;
-  /* transform: translateY(0);
-  transition: transform 0.5s; */
+  transform: translateY(0);
+  transition: transform 0.5s;
   padding: 5px;
 }
 
@@ -63,8 +63,8 @@
 
 .linked {
   text-decoration: none;
-  /* transform: translateY(0);
-  transition: transform 0.5s; */
+  transform: translateY(0);
+  transition: transform 0.5s;
   padding: 5px;
 }
 

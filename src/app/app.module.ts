@@ -13,6 +13,7 @@ import { ContactComponent } from './Components/contact/contact.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { WeatherFinderComponent } from './Components/projects/projects-list/weather-finder/weather-finder/weather-finder.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { CertificateComponent } from './Components/certificate/certificate.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     ContactComponent,
     FooterComponent,
     WeatherFinderComponent,
+    CertificateComponent,
   ],
   imports: [
     BrowserModule,

@@ -24,7 +24,7 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this.isMobile = this.getIsMobile();
     window.onresize = () =>{
-      this,this.isMobile = this.getIsMobile();
+      this.isMobile = this.getIsMobile();
     }
   }
 
