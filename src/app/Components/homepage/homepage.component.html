@@ -1,0 +1,23 @@
+<div class="main-Page">
+    <!-- <app-weather-finder></app-weather-finder> -->
+    <!-- <app-crypto-app></app-crypto-app> -->
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+      <div class="overlay-content">
+          <a (click)="scrollToSection('hero')" class="anchor-section">Hero</a>
+          <a (click)="scrollToSection('about')" class="anchor-section">About</a>
+          <a (click)="scrollToSection('skills')" class="anchor-section">Skills</a>
+          <a (click)="scrollToSection('projects')" class="anchor-section">Projects</a>
+          <a (click)="scrollToSection('contact')" class="anchor-section">Contact</a>
+      </div>
+    </div>
+    <span class="nav-bar" (click)="openNav()">&#9776;</span>
+    <app-hero id="hero"></app-hero>
+    <app-about id="about"></app-about>
+    <app-skills id="skills"></app-skills>
+    <app-projects id="projects"></app-projects>
+    <app-contact id="contact"></app-contact>
+    <app-footer></app-footer>
+    <!-- <app-scroll></app-scroll> -->
+    <!-- <app-certificate></app-certificate> -->
+  </div>

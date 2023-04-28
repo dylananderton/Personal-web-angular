@@ -6,16 +6,24 @@
             PROJECTS
         </h1>
         <div class="project animated">
-            <div *ngIf="isMobile === false" class="hangman" id="hangman">
-                <a href="hm/hm.html" target="_blank">
+            <!-- <div *ngIf="isMobile === false" class="hangman" id="hangman">
+                <a [routerLink]="['hangman']" routerLinkActive="active">
                     <img src="../../../assets/hangman.jpeg" id="hangmanpic">
                     <div class="hm-overlay">
                         <div class="hm-overlay-text">Hangman</div>
                     </div>
                 </a>
+            </div> -->
+            <div *ngIf="isMobile === false" class="hangman" id="hangman">
+                <div [routerLink]="['hangman']" routerLinkActive="active">
+                    <img src="../../../assets/hangman.jpeg" id="hangmanpic">
+                    <div class="hm-overlay">
+                        <div class="hm-overlay-text">Hangman</div>
+                    </div>
+                </div>
             </div>
             <div *ngIf="isMobile === true" class="hangman2" id="hangman2">
-                <a href="hm/hm.html" target="_blank">
+                <a [routerLink]="['hangman']" routerLinkActive="active">
                     <img src="../../../assets/hangmanmobile.jpeg" id="hangmanpic2">
                     <div class="hm2-overlay">
                         <div class="hm2-overlay-text">Hangman</div>
@@ -25,7 +33,7 @@
         </div>
         <div class="project animated">
             <div *ngIf="isMobile === false" class="notes" id="notes">
-                <a href="https://dylananderton.github.io/Notes/" target="_blank">
+                <a [routerLink]="['notes']" routerLinkActive="active">
                     <img src="../../../assets/Notes.jpeg" id="notespic">
                     <div class="notes-overlay">
                         <div class="notes-overlay-text">Notes</div>
@@ -33,7 +41,7 @@
                 </a>
             </div>
             <div *ngIf="isMobile === true" class="notes2" id="notes2">
-                <a href="https://dylananderton.github.io/Notes/" target="_blank">
+                <a [routerLink]="['notes']" routerLinkActive="active">
                     <img src="../../../assets/NotesMobile.jpeg" id="notespic2">
                     <div class="notes2-overlay">
                         <div class="notes2-overlay-text">Notes</div>
@@ -41,7 +49,7 @@
                 </a>
             </div>
         </div>
-        <div class="project animated">
+        <!-- <div class="project animated">
             <div *ngIf="isMobile === false" class="crypto" id="crypto">
                 <a href="https://dylananderton.github.io/Crypto-App/" target="_blank">
                     <img src="../../../assets/crypto.jpeg" id="cryptopic">
@@ -58,10 +66,36 @@
                     </div>
                 </a>
             </div>
+        </div> -->
+        <div class="project animated">
+            <!-- <div *ngIf="isMobile === false" class="crypto" id="crypto">
+                <a [routerLink]="['crypto-app']" routerLinkActive="active">
+                    <img src="../../../assets/crypto.jpeg" id="cryptopic">
+                    <div class="crypto-overlay">
+                        <div class="crypto-overlay-text">Crypto</div>
+                    </div>
+                </a>
+            </div> -->
+            <div *ngIf="isMobile === false" class="crypto" id="crypto">
+                <div (click)="toCrypto()">
+                    <img src="../../../assets/crypto.jpeg" id="cryptopic">
+                    <div class="crypto-overlay">
+                        <div class="crypto-overlay-text">Crypto</div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="isMobile === true" class="crypto2" id="crypto2">
+                <a [routerLink]="['crypto-app']" routerLinkActive="active">
+                    <img src="../../../assets/cryptomobile.jpeg" id="cryptopic2">
+                    <div class="crypto2-overlay">
+                        <div class="crypto2-overlay-text">Crypto</div>
+                    </div>
+                </a>
+            </div>
         </div>
         <div class="project animated">
             <div *ngIf="isMobile === false" class="passgen" id="passgen">
-                <a href="https://dylananderton.github.io/Password-Generator/" target="_blank">
+                <a [routerLink]="['password-gen']" routerLinkActive="active">
                     <img src="../../../assets/passgen.jpeg" id="passgenpic">
                     <div class="passgen-overlay">
                         <div class="passgen-overlay-text">Password Generator</div>
@@ -69,7 +103,7 @@
                 </a>
             </div>
             <div *ngIf="isMobile === true" class="passgen2" id="passgen2">
-                <a href="https://dylananderton.github.io/Password-Generator/" target="_blank">
+                <a [routerLink]="['password-gen']" routerLinkActive="active">
                     <img src="../../../assets/passgenmobile.jpeg" id="passgenpic2">
                     <div class="passgen2-overlay">
                         <div class="passgen2-overlay-text">Password Generator</div>
@@ -79,7 +113,7 @@
         </div>
         <div class="project animated">
             <div *ngIf="isMobile === false" class="weather" id="weather">
-                <a href="https://dylananderton.github.io/Weather-Finder/" target="_blank">
+                <a [routerLink]="['weather-finder']" routerLinkActive="active">
                     <img src="../../../assets/weather.jpeg" id="weatherpic">
                     <div class="weather-overlay">
                         <div class="weather-overlay-text">Weather Finder</div>
@@ -87,7 +121,7 @@
                 </a>
             </div>
             <div *ngIf="isMobile === true" class="weather2" id="weather2">
-                <a href="https://dylananderton.github.io/Weather-Finder/" target="_blank">
+                <a [routerLink]="['weather-finder']" routerLinkActive="active">
                     <img src="../../../assets/weather-mobile.jpeg" id="weatherpic2">
                     <div class="weather2-overlay">
                         <div class="weather2-overlay-text">Weather Finder</div>
@@ -96,4 +130,6 @@
             </div>
         </div>
     </div>
+    
 </section>
+<!-- <router-outlet></router-outlet> -->

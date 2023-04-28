@@ -10,7 +10,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
     trigger('fadeInOutIntroButton', [
       transition(':enter', [
         style({ opacity: 0, transform: 'translateX(-20px)' }),
-        animate('0.6s 0.3s ease-in', style({ opacity:1, transform: 'translateX(0  )'})),
+        animate('0.6s 0.3s ease-in', style({ opacity:1, transform: 'translateX(0)'})),
       ])
     ]),
     trigger('fadeInOutIntroText', [

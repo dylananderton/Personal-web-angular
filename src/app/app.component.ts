@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, Directive, ElementRef, HostListener, Inject, ViewChild } from '@angular/core';
 import { OnInit } from '@angular/core';
-import { trigger, state, style, animate, transition} from '@angular/animations';
+import { Router } from '@angular/router';
+import { fromEvent } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +9,7 @@ import { trigger, state, style, animate, transition} from '@angular/animations';
   styleUrls: ['./app.component.css'],
   animations: []
 })
-export class AppComponent implements OnInit{
 
-  title = 'Personal-Website';
-
-  constructor(){}
-
-  ngOnInit(): void {
-  
-  }
+export class AppComponent {
   
 }

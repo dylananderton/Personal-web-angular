@@ -1,5 +1,6 @@
+import { getLocaleCurrencyCode } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { WeatherService } from 'src/app/weather.service';
+import { MatFormFieldControl } from '@angular/material/form-field';
 
 @Component({
   selector: 'app-weather-finder',
@@ -8,27 +9,13 @@ import { WeatherService } from 'src/app/weather.service';
 })
 export class WeatherFinderComponent implements OnInit {
 
-  lat:any;
-  lon:any;
-  weather:any;
-
-  constructor(private weatherService : WeatherService) { }
+  constructor() { }
 
   ngOnInit(){
-    
   }
 
-  getLocation(){
-    if("geolocation" in navigator){
-      navigator.geolocation.watchPosition((success)=>{
-        this.lat = success.coords.latitude;
-        this.lon = success.coords.longitude;
-
-        this.weatherService.getWeatherDataByCoords(this.lat,this.lon).subscribe(data=>{
-          this.weather = data;
-        })
-      })
-    }
+  onClick(value:any){
+    console.log(value);
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projects',
@@ -19,13 +20,23 @@ export class ProjectsComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor(
+    private router : Router
+  ) { }
 
   ngOnInit(): void {
     this.isMobile = this.getIsMobile();
     window.onresize = () =>{
       this.isMobile = this.getIsMobile();
     }
+  }
+
+  goToHangman(){
+
+  }
+
+  toCrypto(){
+    this.router.navigateByUrl('crypto-app');
   }
 
 }

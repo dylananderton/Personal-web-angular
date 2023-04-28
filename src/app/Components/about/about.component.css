@@ -109,7 +109,10 @@
 }
 
 .AboutMe-text {
+  font-weight: 500;
   text-align: left;
+  font-size:25px;
+  line-height: 1.5;
 }
 
 @media (max-width: 62em) {
@@ -121,7 +124,7 @@
 
 @media (max-width: 37.5em) {
   .AboutMe-text {
-    font-size: 1.05rem;
+    font-size: 16px;
     text-align: center;
   }
 }
