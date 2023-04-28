@@ -13,7 +13,6 @@ import { ContactComponent } from './Components/contact/contact.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { WeatherFinderComponent } from './Components/projects/projects-list/weather-finder/weather-finder/weather-finder.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { CertificateComponent } from './Components/certificate/certificate.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { CryptoAppComponent } from './Components/projects/projects-list/crypto-app/crypto-app.component';
@@ -31,7 +30,6 @@ import { HomepageComponent } from './Components/homepage/homepage.component'
     ContactComponent,
     FooterComponent,
     WeatherFinderComponent,
-    CertificateComponent,
     CryptoAppComponent,
     HangmanComponent,
     NotesComponent,
